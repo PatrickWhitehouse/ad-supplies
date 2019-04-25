@@ -130,6 +130,9 @@ header{
 
 /* Tablet Styling */
 @media (max-width: $screen__m){
+    p{
+        font-size: 1.8rem;
+    }
     header{
         nav{
             flex-wrap:wrap;
@@ -142,9 +145,12 @@ header{
                 li{
                     display: block;
                     margin-left: 0;
+                    margin-bottom: 1rem;
                     text-align: center;
+                    font-size: 2rem;
                     &:last-of-type{
                         margin-right:0;
+                        margin-bottom: 0;
                     }
                 }
             }
