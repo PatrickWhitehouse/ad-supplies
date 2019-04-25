@@ -74,6 +74,10 @@ a:hover, a:focus{
     align-items: center;
     text-align: center;
 
+    &--content{
+        z-index: 1;
+    }
+
     &.black{
         background-color: $black;
         color: $white;
@@ -85,6 +89,20 @@ a:hover, a:focus{
     &.lime{
         background-color: $lime;
         color: $white;
+    }
+    &.has-background{
+        color: $white;
+        position: relative;
+        &:after{
+            position: absolute;
+            display: block;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: linear-gradient(transparent 33%, black)
+        }
     }
 }
 
