@@ -1,6 +1,7 @@
 // Imports
 @import 'normalize';
 @import 'owl';
+@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 @import 'variables';
 
 *{
@@ -103,6 +104,9 @@ header{
         justify-content: space-between;
         align-items: center;
         padding: 2rem 0;
+        .hamburger{
+            display: none;
+        }
         a.logo{
             display: inline-block;
             font-size: 0;
@@ -117,6 +121,31 @@ header{
                 margin-left: 1.2rem;
                 &:last-of-type{
                     margin-right: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* Tablet Styling */
+@media (max-width: $screen__m){
+    header{
+        nav{
+            flex-wrap:wrap;
+            .hamburger{
+                display: inline-block;
+            }
+            ul{
+                display: none;
+                width: 100%;
+                li{
+                    display: block;
+                    margin-left: 0;
+                    text-align: center;
+                    &:last-of-type{
+                        margin-right:0;
+                    }
                 }
             }
         }
