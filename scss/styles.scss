@@ -195,10 +195,22 @@ header{
     }
 }
 
+/* Services */
+
+.services{
+    ul{
+        padding: 0;
+    }
+    li{
+        list-style: square;
+        list-style-position: inside;
+    }
+}
+
 
 /* Tablet Styling */
 @media (max-width: $screen__m){
-    p{
+    p,li, span{
         font-size: 1.8rem;
     }
     header{
