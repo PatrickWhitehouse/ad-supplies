@@ -240,7 +240,7 @@ header{
 
 /* Mobile Styling */
 @media (max-width: $screen__s){
-    .blog{
+    .card{
         grid-template-columns: repeat(1, 1fr);
     }
 }
